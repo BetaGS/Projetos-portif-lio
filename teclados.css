@@ -1,0 +1,228 @@
+* {
+    flex-wrap: wrap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor-primaria: #00ffff; 
+    --cor-secundaria: #FF1493; 
+    --fundo-card: #1a1a1a;
+    --texto-claro: #f0f0f0;
+    --texto-escuro: rgb(0, 0, 0);
+}
+
+header ul li a:hover,
+header ul li a.home {
+
+    color: #0d0d0d;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+   
+    
+
+}
+
+
+
+header {
+    background-color: black;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--cor-secundaria);
+     position: fixed;
+    top:0;
+    width: 95%;
+    z-index: 1000;
+  
+
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+  
+   
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+     text-decoration: none;
+     color: var(--cor-secundaria)
+    
+      
+    
+     
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #0d0d0d;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+
+   
+}
+
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    latter spacing: 2px;
+ 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.hero {
+    background: url(https://giffiles.alphacoders.com/221/221137.gif) no-repeat center/cover;
+    text-align: center;
+    padding: 300px 20px;
+    margin-bottom: 40px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.5); 
+    font-family: none;
+    
+}
+.hero h1 {
+    color:var(--cor-primaria)
+}
+
+.hero p {
+
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display:inline-block;
+    background-color: var(--cor-secundaria);
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+     text-decoration: none;
+     color: var(--texto-escuro);
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #00ffff; 
+    box-shadow: 0 0 15px var(--cor-primaria);
+    transform: translateY(-2px);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    
+}
+
+.produtos {
+    padding: 0 50px 50px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto-card {
+    background-color: var(--fundo-card);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--cor-secundaria);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.produtos {
+    padding: 0 50px 50px;
+    text-align: center;
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    margin: 10px 0;
+    color: var(--cor-primaria);
+}
+
+.produto-card p {
+    color: var(--texto-claro);
+    margin-bottom: 15px;
+}
+
+.produto-card a {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--texto-escuro);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-detalhes:hover {
+    background-color: #00ffff; 
+    box-shadow: 0 0 15px var(--cor-primaria);
+    transform: translateY(-2px);
+}
+
+.preco {
+
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin: 15px;
+}
+
+.produto-card p {
+
+    font-weight: bold;
+    color: var(--texto-claro);
+}
+
+footer {
+
+    background: #0d0d0d;
+    text-align: center;
+    padding: 70px;
+    margin-top: 40px;
+    border-top: 1px solid var(--cor-primaria);
+
+}

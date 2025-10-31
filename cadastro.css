@@ -1,0 +1,136 @@
+* {
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --cor-primaria: #00ffff; 
+    --cor-secundaria: #FF1493; 
+    --fundo-card: #1a1a1a;
+    --texto-claro: #f0f0f0;
+    --texto-escuro: rgb(0, 0, 0);
+}
+
+header ul li a:hover,
+header ul li a.home {
+
+    color: #0d0d0d;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    
+
+}
+
+header {
+    background-color: black;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--cor-secundaria);
+     position: fixed;
+    top:0;
+    width: 95%;
+    z-index: 1000;
+
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+     text-decoration: none;
+     color: var(--cor-secundaria)
+      
+    
+     
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #0d0d0d;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+   
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    latter spacing: 2px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://i.pinimg.com/originals/bb/5e/47/bb5e47498772c0628f6dc7f26a6af28c.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.hero {
+
+    display:block;
+    padding-top: 150px;
+    font-style: bold;
+    text-align: center;
+    color: var(--cor-primaria);
+    
+
+
+}
+
+fieldset {
+display:flex;
+flex-direction: column;
+padding:50px;
+background-color: var(--fundo-card);
+margin: 20px 600px;
+ margin-top: 70px;
+
+}
+
+fieldset label {
+
+    text-align: center;
+  font-weight: bold;
+  color: var(--cor-primaria);
+  margin-bottom: 10mm;
+
+}
+
+fieldset input {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+
+}
+
+
+footer {
+
+    background: #0d0d0d;
+    text-align: center;
+    padding: 70px;
+    margin-top: 120px;
+    border-top: 1px solid var(--cor-primaria);
+
+}
